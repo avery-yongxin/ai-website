@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>抖音电商素材工作台</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23181b1e'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='34' fill='%23ff4f42' font-family='Arial'%3E%E6%8A%96%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">抖</div>
+          <div>
+            <strong>电商素材工作台</strong>
+            <span>内容起稿 / 模板复用 / 运营提效</span>
+          </div>
+        </div>
+        <nav class="nav" aria-label="主导航">
+          <button class="nav-item active" data-page="dashboard" type="button">
+            <span class="nav-icon">⌂</span><span>工作台首页</span>
+          </button>
+          <button class="nav-item" data-page="generator" type="button">
+            <span class="nav-icon">✦</span><span>素材生成</span>
+          </button>
+          <button class="nav-item" data-page="editor" type="button">
+            <span class="nav-icon">✎</span><span>结果编辑</span>
+          </button>
+          <button class="nav-item" data-page="templates" type="button">
+            <span class="nav-icon">▦</span><span>模板库</span>
+          </button>
+          <button class="nav-item" data-page="assets" type="button">
+            <span class="nav-icon">▣</span><span>素材库</span>
+          </button>
+          <button class="nav-item" data-page="loop" type="button">
+            <span class="nav-icon">↻</span><span>运营报告</span>
+          </button>
+        </nav>
+        <div class="sidebar-card">
+          <span class="eyebrow">项目状态</span>
+          <p>今日内容产能 18 件 / 模板复用 6 套 / 素材沉淀 4 类</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Douyin Commerce Studio</p>
+            <h1 id="pageTitle">工作台首页</h1>
+          </div>
+          <div class="top-actions">
+            <button class="ghost-btn" id="resetDemo" type="button">重置演示</button>
+            <button class="primary-btn" id="jumpGenerate" type="button">开始生成</button>
+          </div>
+        </header>
+
+        <section id="pageRoot" class="page-root" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
